@@ -10,6 +10,7 @@ class Endpoint(models.Model):
 class MLAlgorithm(models.Model):
 	name = models.CharField(max_length=128)
 	description = models.CharField(max_length=1000)
+	code = models.CharField(max_length=50000)
 	version = models.CharField(max_length=128)
 	owner = models.CharField(max_length=128)
 	created_at = models.DateTimeField(auto_now_add=True, blank=True)
